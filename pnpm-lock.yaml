@@ -38,6 +38,9 @@ importers:
       shelljs:
         specifier: ^0.8.5
         version: 0.8.5
+      shx:
+        specifier: ^0.3.4
+        version: 0.3.4
 
 packages:
 
@@ -331,6 +334,9 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
   moment-timezone@0.5.46:
     resolution: {integrity: sha512-ZXm9b36esbe7OmdABqIWJuBBiLLwAjrN7CE+7sYdCCx82Nabt1wHDj8TVseS59QIlfFPbOoiBPm6ca9BioG4hw==}
 
@@ -543,6 +549,11 @@ packages:
   shelljs@0.8.5:
     resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}
     engines: {node: '>=4'}
+    hasBin: true
+
+  shx@0.3.4:
+    resolution: {integrity: sha512-N6A9MLVqjxZYcVn8hLmtneQWIJtp8IKzMP4eMnx+nqkvXoqinUPCbUFLp2UcWTEIUONhlk0ewxr/jaVGlc+J+g==}
+    engines: {node: '>=6'}
     hasBin: true
 
   side-channel@1.0.6:
@@ -936,6 +947,8 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.11
 
+  minimist@1.2.8: {}
+
   moment-timezone@0.5.46:
     dependencies:
       moment: 2.30.1
@@ -1145,6 +1158,11 @@ snapshots:
       glob: 7.2.3
       interpret: 1.4.0
       rechoir: 0.6.2
+
+  shx@0.3.4:
+    dependencies:
+      minimist: 1.2.8
+      shelljs: 0.8.5
 
   side-channel@1.0.6:
     dependencies:
