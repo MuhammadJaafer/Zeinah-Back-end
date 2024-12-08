@@ -65,3 +65,7 @@ typings/
 
 # sqlite database
 db/database.sqlite
+
+
+#build files
+dist/
